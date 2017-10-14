@@ -82,6 +82,11 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 ts2 = 0.0f;
                 xuatmanhinh = "0";
                 break;
+            case R.id.del:
+                xuatmanhinh = xuatmanhinh.substring(0,xuatmanhinh.length());
+                edtGT.setText(xuatmanhinh);
+                Log.e("Man hinh hien",xuatmanhinh);
+                break;
 
             default:
                 if (xuatmanhinh.equals("0")) {xuatmanhinh = "";}
