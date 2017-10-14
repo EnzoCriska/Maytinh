@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import java.util.Objects;
-
 public class MainActivity extends Activity implements View.OnClickListener{
     Float ts1, ts2;
     String toantu, xuatmanhinh="";
@@ -61,19 +59,19 @@ public class MainActivity extends Activity implements View.OnClickListener{
             case R.id.bang:
                 Float kq = null;
                 ts2 = Float.parseFloat(edtGT.getText().toString());
-                if (Objects.equals(toantu, "+")){
+                if (toantu.equals("+")){
                     kq = ts1 + ts2;
                 }
 
-                if (toantu == "-"){
+                if (toantu.equals("-")){
                     kq = ts1 - ts2;
                 }
 
-                if (toantu == "*"){
+                if (toantu.equals("*")){
                     kq = ts1 * ts2;
                 }
 
-                if (toantu == "/"){
+                if (toantu.equals("/")){
                     kq = ts1 / ts2;
                 }
 
